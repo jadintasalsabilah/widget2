@@ -5,8 +5,16 @@ package com.example.android.mygarden;
  */
 
 import android.app.IntentService;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
+
+import com.example.android.mygarden.provider.PlantContract;
+import com.example.android.mygarden.utils.PlantUtils;
+
+import static com.example.android.mygarden.provider.PlantContract.BASE_CONTENT_URI;
+import static com.example.android.mygarden.provider.PlantContract.PATH_PLANTS;
 
 /**
  * An {@link IntentService} subclass for handling asynchronous task requests in
